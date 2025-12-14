@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Indigo-based Palette */
+    --background: 225 30% 98%;
+    /* Soft Indigo-White */
+    --foreground: 230 40% 15%;
+    /* Dark Indigo-Grey */
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 40% 15%;
+
+    --primary: 245 80% 60%;
+    /* Indigo 500 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 30% 96%;
+    /* Light Indigo-Grey */
+    --secondary-foreground: 245 80% 60%;
+
+    --muted: 230 30% 96%;
+    --muted-foreground: 230 20% 50%;
+
+    --accent: 230 30% 96%;
+    --accent-foreground: 245 80% 60%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 20% 90%;
+    --input: 230 20% 90%;
+    --ring: 245 80% 60%;
+
+    --radius: 0.75rem;
+    /* More rounded corners */
+  }
+
+  .dark {
+    --background: 230 40% 10%;
+    --foreground: 225 30% 98%;
+
+    --card: 230 40% 12%;
+    --card-foreground: 225 30% 98%;
+
+    --popover: 230 40% 12%;
+    --popover-foreground: 225 30% 98%;
+
+    --primary: 245 80% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 30% 20%;
+    --secondary-foreground: 225 30% 98%;
+
+    --muted: 230 30% 20%;
+    --muted-foreground: 230 20% 65%;
+
+    --accent: 230 30% 20%;
+    --accent-foreground: 225 30% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 30% 20%;
+    --input: 230 30% 20%;
+    --ring: 245 80% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
